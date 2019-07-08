@@ -1,0 +1,122 @@
+<ion-content padding>
+
+    <div id="background_osciloscope">
+
+      <ion-grid>
+
+        <ion-row>
+
+          <!-- Col screen + bar -->
+          <ion-col>
+            <div id ="screen">
+
+                <canvas id="canvas" width="500" height="500" ></canvas>
+  
+            </div>
+
+            <div id="phi">
+              <p></p>
+              ϕ = {{this.phi}}
+              <ion-range min="0" max="20" step="1" [(ngModel)]="angle" color="blue" (ionChange)="phi_angle(ON)">
+                <ion-label range-left>0π</ion-label>
+                <ion-label range-right>2π</ion-label>
+              </ion-range>
+            </div>
+          </ion-col>
+
+          <!-- Col controls -->
+          <ion-col>
+
+            <ion-grid>
+
+              <!-- Row ON / OFF  - Lissajous curves -->
+              <ion-row>
+                
+                <!-- Lissajous Curves -->
+                <ion-col id="lissajous_curves">
+                    LISSAJOUS CURVES:
+                    <ion-col id="lissajous">
+                        <p> x = A * sin(a * t) </p>
+                        <p> y = B * sin(b * t + ϕ)</p>
+                    </ion-col>
+                </ion-col>
+
+                  <ion-col>
+                    <ion-item id = "on_off">
+                        <ion-label>ON</ion-label>
+                        <ion-toggle [(ngModel)]="ON" [checked]="false" (ionChange)="phi_angle(ON)"></ion-toggle>
+                    </ion-item>
+                  </ion-col>
+                </ion-row>
+
+              <!-- Row A + B -->
+              <ion-row id="A_and_B">
+
+                <ion-col>
+                  <div id="controller_Aa">
+                      <p></p>
+                      A = {{this.A}}
+                      <ion-range min="0" max="200" step="1" [(ngModel)]="value_A" color="white" (ionChange)="phi_angle(ON)">
+                        <ion-label range-left>0</ion-label>
+                        <ion-label range-right>200</ion-label>
+                      </ion-range>
+                    </div>
+                  </ion-col>
+
+                <ion-col>
+                  <div id="controller_Bb">
+                      <p></p>
+                      B = {{this.B}}
+                      <ion-range min="0" max="200" step="1" [(ngModel)]="value_B" color="blue" (ionChange)="phi_angle(ON)">
+                        <ion-label range-left>0</ion-label>
+                        <ion-label range-right>200</ion-label>
+                      </ion-range>
+                    </div>
+                </ion-col>
+              </ion-row>
+
+              <!-- Row a + b -->
+              <ion-row id="a_and_b">
+                <ion-col>
+
+                  <div id="controller_Aa">
+                      <p></p>
+                      a = {{this.a}}
+                      <ion-range min="0" max="20" step="1" [(ngModel)]="value_a" color="blue" (ionChange)="phi_angle(ON)">
+                        <ion-label range-left>0</ion-label>
+                        <ion-label range-right>20</ion-label>
+                      </ion-range>
+                    </div>
+
+                </ion-col>
+
+                <ion-col>
+                  <div id="controller_Bb">
+                      <p></p>
+                      b = {{this.b}}
+                      <ion-range min="0" max="20" step="1" [(ngModel)]="value_b" color="blue" (ionChange)="phi_angle(ON)">
+                        <ion-label range-left>0</ion-label>
+                        <ion-label range-right>20</ion-label>
+                      </ion-range>
+                    </div>
+                </ion-col>
+
+              </ion-row>
+              
+            </ion-grid>
+
+          </ion-col>
+
+        </ion-row>
+
+      </ion-grid>
+
+    </div>
+
+  <ion-footer>
+    <ion-toolbar>
+      <ion-title> Sara Berezo Loza, GUI Programming, Politechnika Łódzka </ion-title>
+    </ion-toolbar>
+  </ion-footer>
+
+</ion-content>

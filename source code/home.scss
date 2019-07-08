@@ -1,0 +1,112 @@
+page-home {
+
+    #background_osciloscope{ 
+        position: fixed;
+        background-color: #3D3D3D;
+        border: #5C5958 30px solid;
+        border-radius: 10px;
+        margin-left: 1%;
+        width: 87.5%;
+        height: auto;
+    }
+    
+    #lissajous_curves {
+        color: whitesmoke;
+        font-size: 25px;
+        text-align: left;
+        font-family: "Times New Roman";
+        margin-top: 2%;
+    }
+
+    #lissajous {
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    #on_off {
+        position: static;
+        background-color: #3D3D3D;
+        border-radius: 5px;
+        border: #5C5958 3px solid;
+        color: whitesmoke;
+        width: 70%;
+        margin-left: 5%;
+        margin-top: 1%;
+    }
+    
+    #phi {
+        position: fixed;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        font-size: 20px;
+        text-align: center;
+        color: black;
+        margin-top: 2%;
+        margin-left: 1%;
+        width: 36%;
+    }
+
+    #A_and_B {
+        margin-top: 7%;
+    }
+
+    #a_and_b {
+        margin-top: 8%;
+    }
+
+    #controller_Aa {
+        background-color: #3D3D3D;
+        border: #5C5958 3px solid;
+        border-radius: 10px;
+        font-size: 20px;
+        text-align: center;
+        color: whitesmoke;
+        width: 83%;
+    }
+
+    #controller_Bb {
+        background-color: #3D3D3D;
+        border: #5C5958 3px solid;
+        border-radius: 10px;
+        font-size: 20px;
+        text-align: center;
+        color: whitesmoke;
+        margin-left: 1%;
+        width: 83%;
+    }
+
+    #screen {
+        background-color: #9DCE69;
+        border-radius: 5px;
+        border: #232222 6px solid;
+        background-image:
+            linear-gradient(rgba(0, 0, 0, 0) 49px, rgba(0, 0, 0, .1) 49px, rgba(0, 0, 0, .1) 50px), 
+            linear-gradient(90deg, rgba(0, 0, 0, 0) 49px, rgba(0, 0, 0, .1) 49px, rgba(0, 0, 0, .1) 50px);
+        background-size: 50px 50px, 50px 50px;
+        background-position: center center;
+        margin-top: 1%;
+        margin-left: 1.5%;
+        width: 90%;
+        height: 65%;
+    }
+
+    canvas {
+        position: relative;
+        display: block;
+        border: #37412D 3px solid;
+        max-width: 100%;
+        background-position: center center;
+        width: 100%;
+        height: 100%;
+    }
+
+    canvas:first-child {
+        position: static;
+    }
+
+    #controller {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+}

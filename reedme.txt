@@ -1,0 +1,16 @@
+STUDENT INFORMATION:
+Student name: Sara Berezo Loza
+Student ID: 902696 (Erasmus)
+
+DESCRIPTION:
+The project try to simulate a real osciloscope appearance and represent Lissajous curves. The user can modify
+all the parameters and see how the osciloscope represent the curve.
+
+HOW IT WORKS:
+First of all, there is an ON/OFF button. The user just must press it to switch on. Then, the user has to select the desired 
+values for the variables. The values can be modified even if the osciloscope is off.
+
+DEVELOPMENT:
+This project has been developed in Angular using Ionic Framework.
+Inside "source code" folder there are the source code files (html, typescript and scss).
+Inside "build" folder there are all the files compiled by the Framework Ionic.

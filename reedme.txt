@@ -1,7 +1,3 @@
-STUDENT INFORMATION:
-Student name: Sara Berezo Loza
-Student ID: 902696 (Erasmus)
-
 DESCRIPTION:
 The project try to simulate a real osciloscope appearance and represent Lissajous curves. The user can modify
 all the parameters and see how the osciloscope represent the curve.
